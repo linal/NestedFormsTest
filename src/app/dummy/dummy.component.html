@@ -1,4 +1,5 @@
 <div [formGroup]="dummyGroup">
   <label>Dummy Input:</label>
   <input formControlName="dummyInput"/>
+  <input type="file" (change)="fileChange($event)" accept=".pdf,.doc,.png,.tiff" />
 </div>
