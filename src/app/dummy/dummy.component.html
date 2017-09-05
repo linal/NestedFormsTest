@@ -1,5 +1,7 @@
 <div [formGroup]="dummyGroup">
-  <label>Dummy Input:</label>
+  <label>{{question.Name}}:</label>
   <input formControlName="dummyInput"/>
-  <input type="file" (change)="fileChange($event)" accept=".pdf,.doc,.png,.tiff" />
+  <input type="file" (change)="fileChange($event)" />
+
+<!-- accept=".pdf,.doc,.png,.tiff"  -->
 </div>
